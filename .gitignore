@@ -1,0 +1,9 @@
+node_modules/
+.env
+dist/
+uploads/images/*
+!uploads/images/1769030000000_*.jpg
+.vscode/
+.idea/
+*.log
+db.sqlite
