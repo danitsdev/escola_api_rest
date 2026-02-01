@@ -23,6 +23,7 @@ const limiter = rateLimit({
   message: {
     errors: ['Muitas requisições vindas deste IP, tente novamente em 15 minutos.'],
   },
+  skip: () => process.env.NODE_ENV === 'development',
 });
 
 class App {
